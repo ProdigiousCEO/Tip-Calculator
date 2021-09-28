@@ -1,0 +1,168 @@
+
+body {
+    background-color: #c5e4e8;
+    margin: 100px;
+    font-family: 'Space Mono', monospace;
+}
+
+div {
+    display: block;
+}
+
+
+.calculator {
+    background-color: white;
+    height: 300px;
+    width: 600px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    border-radius: 20px;
+    box-shadow: 1px 1px #e2e2e2;
+    padding:10px;
+}
+
+.input {
+    background-color: #ffffff;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+.output {
+    justify-content: center;
+    background-color: #05474b;
+    height: 100%;
+    display: flex;
+    width: 100%;
+    border-radius: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.bill {
+    display: flex;
+}
+
+.cal-input {
+    background: #f3f9f9;
+    display: block;
+    outline: none;
+    border: none;
+    box-shadow: 1px 1px grey;
+    padding: 6px;
+    border-radius: 6px;
+    text-align: right;
+    font-size: 1.2em;
+}
+
+.amount-wrapper:before {
+    content: '$';
+    position: absolute;
+    left: 6px;
+    top: 1px;
+    color: grey;
+    font-size: 1.3em;
+}
+
+.amount-wrapper {
+    position: relative;
+}
+
+.people-wrapper {
+    position: relative;
+}
+
+i.fas.fa-user {
+    position: absolute;
+    left: 6px;
+    top: 8px;
+    color: grey;
+    font-size: 1.0em;
+}
+
+.tip-wrapper {
+    display: flex;
+}
+
+.tip-item {
+    background: #00494d;
+    flex: 1;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    color:white;
+    text-align: center;
+}
+
+.tip-selection {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.reset {
+    height: 40px;
+    align-items: center;
+    width: 250px;
+    background:#2fb0a1;
+    justify-content: center;
+    display: flex;
+    border-radius: 10px;
+    color:#05474b
+}
+
+.total {
+    height: 67px;
+    width: 250px;
+    
+    color: #2fb0a1;
+}
+
+.tip-amount {
+    height: 67px;
+    width: 250px;
+    background: lightblue;
+    color: #2fb0a1;
+}
+
+.tip-amount:before {
+    content: 'Tip Amount';
+    position: absolute;
+    font-size: 0.9em;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #2fb0a1;
+}
+
+.total:before {
+    content: 'Tip Amount';
+    position: absolute;
+    font-size: 0.9em;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #2fb0a1;
+}
+
+
+
+input#output {
+    height: 100%;
+    width: 100%;
+    background: #05474b;
+    color: #2fb0a1;
+    border: none;
+    text-align: right;
+    font-family: 'Space Mono', monospace;
+    font-size: 30px;
+}
+
+h5.tip-person {
+    font-family: 'Space Mono', monospace;
+    margin-bottom: 0px;
+    margin-top: -45px;
+    color: white;
+    /* display: flex; */
+}
