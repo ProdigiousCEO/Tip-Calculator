@@ -11,6 +11,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.1/css/fontawesome.min.css" integrity="sha512-fZR38yq4xO90wo6TP7f0IltoS2HxJD3HmXEEt4cGU3BXPDjGZ6nun24myAgfajbfO1TOigLZT/ylZGRhA8vtZQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.1/css/all.min.css" integrity="sha512-ioRJH7yXnyX+7fXTQEKPULWkMn3CqMcapK0NNtCN8q//sW7ZeVFcbMJ9RvX99TwDg6P8rAH2IqUSt2TLab4Xmw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body>
     <main class="calculator">
@@ -33,26 +34,26 @@
                 <div class='tip-wrapper'>
                     <div class='tip-item'>20%</div>
                     <div class='tip-item'>30%</div>
-                    <div class='tip-item'>Custom%</div>
+                    <input id='custom' class='tip-item' placeholder='Custom'>
                 </div>
                 
             </div>
 
             <label for='people-count'>Number of People</label>
-            <div class='people-wrapper'> 
+            <div class='people-wrapper'>
+                <div class='error-msg'>Can't Be Zero</div> 
                 <i class="fas fa-user"></i>
-                <input class="cal-input" name='nop' type='text' id='nop' placeholder="0">
+                <input id='people-count' class="cal-input2" name='nop' type='text' id='nop' placeholder="0">
             </div>
-
-
         </div>
+
         <div class="output">
             <div class='tip-amount'>
                 <input id='output' type="text" placeholder="$0.00">
                 <h5 class='tip-person'>/person</h5>
             </div>
             <div class='total' >
-                <input id='output' type="text" placeholder="$0.00">
+                <input id='output2' type="text" placeholder="$0.00">
                 <h5 class='tip-person'>/person</h5>
             </div>
             <div class='reset'>
@@ -60,5 +61,6 @@
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

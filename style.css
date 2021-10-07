@@ -47,7 +47,7 @@ div {
     display: flex;
 }
 
-.cal-input {
+.cal-input, .cal-input2 {
     background: #f3f9f9;
     display: block;
     outline: none;
@@ -79,7 +79,7 @@ div {
 i.fas.fa-user {
     position: absolute;
     left: 6px;
-    top: 8px;
+    top: 32px;
     color: grey;
     font-size: 1.0em;
 }
@@ -96,6 +96,10 @@ i.fas.fa-user {
     border-radius: 5px;
     color:white;
     text-align: center;
+}
+
+.tip-item:hover {
+    background: #c5e4e8;
 }
 
 .tip-selection {
@@ -138,7 +142,7 @@ i.fas.fa-user {
 }
 
 .total:before {
-    content: 'Tip Amount';
+    content: 'Total';
     position: absolute;
     font-size: 0.9em;
     overflow: hidden;
@@ -148,7 +152,7 @@ i.fas.fa-user {
 
 
 
-input#output {
+input#output, input#output2 {
     height: 100%;
     width: 100%;
     background: #05474b;
@@ -165,4 +169,26 @@ h5.tip-person {
     margin-top: -45px;
     color: white;
     /* display: flex; */
+}
+
+/* .show-error-msg::after {
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+    color: indianred;
+    font-weight: 700;
+    font-size: 1.0rem;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -24px;
+    content: "Can't be Zero";
+} */
+
+.error-msg {
+    color: indianred;
+    font-weight: 700;
+    font-size: 1.0rem;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -24px;
+    opacity: 0;
 }
